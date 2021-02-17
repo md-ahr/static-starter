@@ -1,0 +1,72 @@
+/* ----- Basic Root Styles ----- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: $whiteColor;
+  color: $textColor;
+  font-family: $ubuntuRegular;
+  font-size: 1rem;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  .custom-container {
+    max-width: 90%;
+
+    @include laptop {
+      max-width: 85%;
+    }
+
+    @include smallDesktop {
+      max-width: 80%;
+    }
+
+    @include desktop {
+      max-width: 75%;
+    }
+  }
+
+  a {
+    color: inherit;
+
+    &:focus,
+    &:active,
+    &:link,
+    &:hover {
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all 0.5s ease;
+  }
+
+  ::placeholder {
+    color: $placeholderColor !important;
+    font-style: normal;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+/* ----- Navigation Section ----- */
+
+.header {
+  .navbar {
+    padding-top: 0.8125em;
+    border-bottom: 1px solid $borderColor;
+    z-index: $zIndexHigh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    backface-visibility: hidden;
+    @include transition(all, 0.3s, ease);
+
+    &-nav {
+      margin-left: auto;
+
+      .nav-item {
+        padding-left: 1em;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        @include laptop {
+          padding-left: 2em;
+        }
+
+        .nav-link {
+          color: $whiteColor;
+          font-size: 1rem;
+          text-align: center;
+          font-family: $ubuntuRegular;
+          @include transition(transform, 0.7s, ease);
+
+          &:hover {
+            transform: scale(1.075);
+          }
+
+          &.active {
+            font-family: $ubuntuMedium;
+          }
+
+          &.quote-link {
+            width: 140px;
+            height: 42px;
+            background-color: $whiteColor;
+            color: $primaryColor;
+            @include border-radius(20px, 20px, 20px, 20px);
+          }
+        }
+      }
+    }
+  }
+}

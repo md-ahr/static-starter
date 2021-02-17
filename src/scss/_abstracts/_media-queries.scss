@@ -1,0 +1,105 @@
+/* ----- Media Queries For Desktop, Laptop, Tablet & Mobile ----- */
+
+// Size For Desktop & Laptop
+$sm-laptop-width: (
+  min-width: 992px,
+);
+$laptop-width: (
+  min-width: 1200px,
+);
+$sm-desktop-width: (
+  min-width: 1300px,
+);
+$desktop-width: (
+  min-width: 1400px,
+);
+$lg-desktop-width: (
+  min-width: 1600px,
+);
+
+// Size For Tablet & Mobile
+$sm-mobile-width: (
+  min-width: 320px,
+);
+$md-mobile-width: (
+  min-width: 360px,
+);
+$lg-mobile-width: (
+  min-width: 410px,
+);
+$xl-mobile-width: (
+  min-width: 600px,
+);
+$table-width: (
+  min-width: 768px,
+);
+
+// Laptop Size 960px or Greater
+@mixin smallLaptop {
+  @media #{$sm-laptop-width} {
+    @content;
+  }
+}
+
+// Laptop Size 1200px or Greater
+@mixin laptop {
+  @media #{$laptop-width} {
+    @content;
+  }
+}
+
+// Small Desktop or Large Laptop Size 1300px or Greater
+@mixin smallDesktop {
+  @media #{$sm-desktop-width} {
+    @content;
+  }
+}
+
+// Desktop Size 1400px or Greater
+@mixin desktop {
+  @media #{$desktop-width} {
+    @content;
+  }
+}
+
+// Desktop Size 1600px or Greater
+@mixin largeDesktop {
+  @media #{$lg-desktop-width} {
+    @content;
+  }
+}
+
+// Less Than 5 Inchi, 320px or Greater
+@mixin smallMobile {
+  @media #{$sm-mobile-width} {
+    @content;
+  }
+}
+
+// 5.0 To 5.5 Inchi, 360px or Greater
+@mixin mediumMobile {
+  @media #{$md-mobile-width} {
+    @content;
+  }
+}
+
+// Greater Than 5.5 Inchi, 410px or Greater
+@mixin largeMobile {
+  @media #{$lg-mobile-width} {
+    @content;
+  }
+}
+
+// Greater Than 6.0 Inchi, 600px or Greater
+@mixin bigMobile {
+  @media #{$xl-mobile-width} {
+    @content;
+  }
+}
+
+// Tablet Size 768px or Greater
+@mixin bigMobile {
+  @media #{$xl-mobile-width} {
+    @content;
+  }
+}
