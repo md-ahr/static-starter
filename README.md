@@ -1,5 +1,5 @@
-# odommo.dev
-Odommo Home page.
+# example.com
+This is an starter template for web design.
 
 ### Dependency packages install
 

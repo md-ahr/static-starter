@@ -1,17 +1,15 @@
 {
-  "name": "odommo",
+  "name": "starter",
   "version": "1.1.0",
   "description": "A simple service based web application",
   "main": "index.js",
   "keywords": [
     "Graphics Design",
     "UI/UX",
-    "Android/Ios",
     "Web Design",
-    "Web Development",
-    "Dev Ops"
+    "Web Development"
   ],
-  "author": "odommo.dev",
+  "author": "Abdul Halim",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
